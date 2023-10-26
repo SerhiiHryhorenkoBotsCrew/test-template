@@ -115,16 +115,19 @@
     <div class="longContent">another long content content</div>
     <div style="display: flex; align-items: flex-end; height: 400px;">end of body</div>
 
-    <script>
+    <!-- <script>
         let isBottyScriptPresent = false;
         function addChatbotScript() {
             let tag = document.createElement('script');
             tag.type = "text/javascript";
             tag.id = "chatbot-initials-script";
             tag.defer = true;
-            tag.src = "https://app-widget-qa.botscrew.net/widget/script-chatbot.js";
-            tag.setAttribute('server-url', "https://app-widget-qa.botscrew.net/api");
-            tag.setAttribute('bot-id', "90b11c09-3af5-4144-bc1b-81f3c368e3bf");
+            tag.src = "http://localhost:3030/script-chatbot.js";
+            tag.setAttribute('server-url', "http://localhost:8080");
+            tag.setAttribute('bot-id', "65379829619e29a5f8ed3732");
+            // tag.src = "https://app-widget-qa.botscrew.net/widget/script-chatbot.js";
+            // tag.setAttribute('server-url', "https://app-widget-qa.botscrew.net/api");
+            // tag.setAttribute('bot-id', "90b11c09-3af5-4144-bc1b-81f3c368e3bf");
             document.body.append(tag);
             isBottyScriptPresent = true;
         }
@@ -146,11 +149,11 @@
 
         const observer = new IntersectionObserver(handleIntersect, intersectionOptions)
         observer.observe(intersectionTargetEl)
-    </script>
-    <!-- <script type="text/javascript" id="chatbot-initials-script"
+    </script> -->
+    <script type="text/javascript" id="chatbot-initials-script"
         src="https://noform-ai-widget-git-nfa-60-fix-widget-size-hembara-s-team.vercel.app/script-chatbot.js"
         data-server-url="https://noform-ai-admin-19p40lix8-hembara-s-team.vercel.app"
-        data-bot-id="65379829619e29a5f8ed3732"></script> -->
+        data-bot-id="65379829619e29a5f8ed3732"></script>
 </body>
 
 </html>
